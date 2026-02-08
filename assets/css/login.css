@@ -1,0 +1,78 @@
+:root{
+  /* Spaces */
+  --spacing-5 : 5px;
+  --spacing-10 : 10px;
+
+  /* Colors */
+  --theme-color : #3c0b4f;
+}
+
+@font-face {
+  font-family: "my-custom-font";
+  src: url('./assets/fonts/lexend-Regular.ttf');
+}
+
+body{
+  font-family: "my-custom-font";
+  color: var(--theme-color);
+}
+
+.border-radius-5{
+  border-radius: var(--spacing-5) !important;
+}
+
+.border-2{
+  border: 2px solid var(--theme-color);
+}
+
+.pad-10{
+  padding: var(--spacing-10);
+}
+
+.wd-40{
+  width: 40%;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.margin-y-10{
+  margin: var(--spacing-10) 0px;
+}
+
+.bg-main{
+  background-color: var(--theme-color);
+}
+
+.color-main{
+  color: var(--theme-color);
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.d-none{
+  display: none;
+}
+
+.vh-40{
+  height: 40vh;
+}
+
+.transition-1s{
+  transform: 1s ease all;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.gap-10{
+  gap: 10px;
+}
