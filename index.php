@@ -20,6 +20,9 @@
         ?>
     </body>
 
+    <!-- JS Files -->
     <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/create_class.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"></script>
+    
 </html>

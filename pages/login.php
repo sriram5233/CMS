@@ -13,14 +13,14 @@
                     <form id="teacherForm" class="pad-10">
 
                         <label for="classId" class="w-100 text-left margin-y-10">Class ID</label>
-                        <input class="w-100 pad-10" id="teacherClassId" name="classId" type="text">
+                        <input class="w-100 fs-20 pad-5" id="teacherClassId" name="classId" type="text">
 
                         <label for="username" class="w-100 text-left margin-y-10">Username</label>
-                        <input class="w-100 pad-10" id="teacherUsername" name="username" type="text">
+                        <input class="w-100 fs-20 pad-5" id="teacherUsername" name="username" type="text">
 
 
                         <label for="password" class="w-100 text-left margin-y-10">Password</label>
-                        <input class="w-100 pad-10" id="teacherPassword" name="password" type="text">
+                        <input class="w-100 fs-20 pad-5" id="teacherPassword" name="password" type="text">
 
                         <div class="w-100 pad-10 border-2 border-radius-5 margin-y-10 bg-main text-center text-white cursor-pointer" id="teacherSubmitButton">Login</div>
 
@@ -44,14 +44,14 @@
                     <form id="studentForm" class="pad-10">
 
                         <label for="classId" class="w-100 text-left margin-y-10">Class ID</label>
-                        <input class="w-100 pad-10" id="studentClassId" name="classId" type="text">
+                        <input class="w-100 fs-20 pad-5" id="studentClassId" name="classId" type="text">
 
                         <label for="username" class="w-100 text-left margin-y-10">Username</label>
-                        <input class="w-100 pad-10" id="studentUsername" name="username" type="text">
+                        <input class="w-100 fs-20 pad-5" id="studentUsername" name="username" type="text">
 
 
                         <label for="password" class="w-100 text-left margin-y-10">Password</label>
-                        <input class="w-100 pad-10" id="studentPassword" name="password" type="text">
+                        <input class="w-100 fs-20 pad-5" id="studentPassword" name="password" type="text">
 
                         <div class="w-100 pad-10 border-2 border-radius-5 margin-y-10 bg-main text-center text-white cursor-pointer" id="studentSubmitButton">Login</div>
 
@@ -74,7 +74,7 @@
                 <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                     <form id="classCreateForm" class="w-100 pad-10">
 
-                        <div class="w-100 pad-10 border-2 border-radius-5 margin-y-10 bg-main text-center text-white cursor-pointer" id="createClassButton">Create Class</div>
+                        <div class="w-100 pad-10 border-2 border-radius-5 margin-y-10 bg-main text-center text-white cursor-pointer" id="createButton">Create Class</div>
 
                     </form>
                 </div>

@@ -1,18 +1,22 @@
-let teacherSubmitButton = document.getElementById('teacherSubmitButton');
-let studentSubmitButton = document.getElementById('studentSubmitButton');
-let createClassButton = document.getElementById('createClassButton');
-
-let createClassPage = document.getElementById('createClassPage');
-let loginPage = document.getElementById('loginPage');
-
-let cmsTeacherTab = document.getElementById('cmsTeacherTab');
-let cmsStudentTab = document.getElementById('cmsStudentTab');
-let cmsClassCreateTab = document.getElementById('cmsClassCreateTab');
-let cmsTeacherForm = document.getElementById('cmsTeacherForm');
-let cmsStudentForm = document.getElementById('cmsStudentForm');
-let cmsClassCreateForm = document.getElementById('cmsClassCreateForm');
-
 document.addEventListener('DOMContentLoaded', ()=>{
+
+    /**
+     * Global Variables
+     */
+
+    let teacherSubmitButton = document.getElementById('teacherSubmitButton');
+    let studentSubmitButton = document.getElementById('studentSubmitButton');
+    let createButton = document.getElementById('createButton');
+
+    let createClassPage = document.getElementById('createClassPage');
+    let loginPage = document.getElementById('loginPage');
+
+    let cmsTeacherTab = document.getElementById('cmsTeacherTab');
+    let cmsStudentTab = document.getElementById('cmsStudentTab');
+    let cmsClassCreateTab = document.getElementById('cmsClassCreateTab');
+    let cmsTeacherForm = document.getElementById('cmsTeacherForm');
+    let cmsStudentForm = document.getElementById('cmsStudentForm');
+    let cmsClassCreateForm = document.getElementById('cmsClassCreateForm');
 
     /**
      * Eventlistening section fot tabs opening and closing
@@ -47,7 +51,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         console.log('Student Submitted');
     });
 
-    createClassButton.addEventListener('click', ()=>{
+    createButton.addEventListener('click', ()=>{
         loginPage.classList.add('d-none');
         createClassPage.classList.remove('d-none');
     });

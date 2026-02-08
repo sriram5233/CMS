@@ -4,16 +4,10 @@
   --spacing-10 : 10px;
 
   /* Colors */
-  --theme-color : #3c0b4f;
-}
-
-@font-face {
-  font-family: "my-custom-font";
-  src: url('./assets/fonts/lexend-Regular.ttf');
+  --theme-color : #000000;
 }
 
 body{
-  font-family: "my-custom-font";
   color: var(--theme-color);
 }
 
@@ -53,8 +47,28 @@ body{
   cursor: pointer;
 }
 
+.flex-row{
+  height: auto;
+}
+
+.justify-self-start{
+  justify-self: start;
+}
+
 .d-none{
   display: none;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.fs-20{
+  font-size: 20px;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .vh-40{
