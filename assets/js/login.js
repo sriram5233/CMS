@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let studentSubmitButton = document.getElementById('studentSubmitButton');
     let createButton = document.getElementById('createButton');
 
-    let createClassPage = document.getElementById('createClassPage');
-    let loginPage = document.getElementById('loginPage');
-
     let cmsTeacherTab = document.getElementById('cmsTeacherTab');
     let cmsStudentTab = document.getElementById('cmsStudentTab');
     let cmsClassCreateTab = document.getElementById('cmsClassCreateTab');
@@ -44,7 +41,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
      * Event listening to the submit buttons
      */
     teacherSubmitButton.addEventListener('click', ()=>{
-        console.log('Teacher Submitted')
+        console.log('Teacher Submitted');
     });
 
     studentSubmitButton.addEventListener('click', ()=>{
@@ -52,8 +49,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
 
     createButton.addEventListener('click', ()=>{
-        loginPage.classList.add('d-none');
-        createClassPage.classList.remove('d-none');
+        window.location.href = '/CMS/create_class';
     });
 
 });

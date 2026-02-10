@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let createAdminForm = document.getElementById('createAdminForm');
 
     let createAdmin = document.getElementById('createAdmin');
-    let createClass = document.getElementById('createClass');
+    // let createClass = document.getElementById('createClass');
 
     let classDetails;
 
@@ -15,30 +15,40 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         classDetails = new FormData(createAdminForm);
 
-        // const formObject = Object.fromEntries(classDetails.entries());
-        // const jsonString = JSON.stringify(formObject);
-        // console.log(jsonString);
-
-        fetch('./modules/create_class.php', {
+        fetch('./modules/create_class_db.php', {
             method: 'POST',
             body: classDetails
         })
         .then(response => response.text())
         .then(data => {
-            json_message = JSON.parse(data);
-            if(message.status === 'success'){
-                alert(json_message.message);
+            if(JSON.parse(data)){
+                let response = JSON.parse(data);
+                if(response.status == 'success'){
+                    alertFields(response.status, response.message);
+                    window.location.href = '/CMS/dashboard';
+                }
+                else if(response.status == 'error'){
+                    alertFields(response.status, response.message);
+                }
+                else if(response.message == 'alert'){
+                    alertFields(response.status, response.message);
+                }
+                else{
+                    console.log(data);
+                    alertFields('error', 'Something went wrong!')
+                }
             }
-            else {
-                alert(json_message.message);
+            else{
+                console.log(data);
             }
         })
         .catch(error => {
             console.log(error);
         });
-
-        // createClass.classList.remove('d-none');
-        // createAdmin.classList.add('d-none');
     });
-
 });
+
+function alertFields(status, message) {
+    alert(message);
+}
+

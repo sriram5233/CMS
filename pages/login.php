@@ -1,3 +1,5 @@
+<h1 class="d-none">login</h1>
+
 <div id="loginPage" class="container vh-100 pad-10 d-flex justify-content-end align-items-center">
     <div class="wd-40">
 
@@ -84,3 +86,5 @@
         
     </div>
 </div>
+
+<script src="./assets/js/login.js"></script>
